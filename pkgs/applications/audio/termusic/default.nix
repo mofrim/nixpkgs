@@ -24,13 +24,13 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "termusic-master";
-  version = "0.9.1";
+  version = "0.10.0";
 
   src = fetchFromGitHub {
     owner = "tramhao";
     repo = "termusic";
-    rev = "d82806cd15a7916bd4a2b1b93434c19c6ea2d1fb";
-    hash = "sha256-dGwTMS1wUL90uNhS3kM+V+y7mI0TbQBIN4W0I4mSf0A=";
+    rev = "89cf05b2ef15c29ca6d76f2b910486fb79b53513";
+    hash = "sha256-Yd23Jk2BFuLtxgF8vgat0wTGq6ahHHBd/HjGI9BY9z4=";
   };
 
   # cargoPatches = [
@@ -57,7 +57,7 @@ rustPlatform.buildRustPackage rec {
     popd
   '';
 
-  cargoHash = "sha256-umPRYUpJEnK+dHJxLubZhY2kH0Fqpds1Y8x8FVK8lVQ=";
+  cargoHash = "sha256-vE0vhNtYgwjU4N+xm3u+8J95AnpCQU5cgSVZrmcfn6A=";
 
   useNextest = true;
 
